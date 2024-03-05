@@ -13,7 +13,10 @@ run apt-get install vim procps -y
 
 run npm install pm2 -g
 run git clone https://github.com/xshopper/done24bot.git
-run cd done24bot
+
+workdir /done24bot
+
+run cd /done24bot
 run npm install
 
 run chmod +x /done24bot/entrypoint.sh
