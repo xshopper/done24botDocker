@@ -6,12 +6,12 @@
 from node:slim
 
 run apt-get update
-run apt-get install git -y
+run apt-get install git redis-server -y
 
 # For development
 run apt-get install vim procps -y
 
-run npm install pm2 redis -g
+run npm install pm2 -g
 run git clone https://github.com/xshopper/done24bot.git
 run cd done24bot
 
