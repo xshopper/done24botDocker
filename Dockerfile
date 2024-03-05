@@ -3,8 +3,6 @@
 # VERSION               0.1
 # DOCKER-VERSION        0.2
 
-arg CACHEBUST=1 
-
 from node:slim
 
 run apt-get update
