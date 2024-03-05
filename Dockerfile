@@ -3,6 +3,8 @@
 # VERSION               0.1
 # DOCKER-VERSION        0.2
 
+arg CACHEBUST=1 
+
 from node:slim
 
 run apt-get update
@@ -16,4 +18,4 @@ run git clone https://github.com/xshopper/done24bot.git
 run cd done24bot
 run npm install
 
-ENTRYPOINT ["/done24bot/entrypoint.sh"]
+entrypoint ["/done24bot/entrypoint.sh"]
