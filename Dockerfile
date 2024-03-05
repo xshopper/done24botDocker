@@ -15,4 +15,6 @@ run npm install pm2 redis -g
 run git clone https://github.com/xshopper/done24bot.git
 run cd done24bot
 
+run chmod +x /done24bot/entrypoint.sh
+
 entrypoint ["/done24bot/entrypoint.sh"]
